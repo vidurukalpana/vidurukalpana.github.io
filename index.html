@@ -555,6 +555,7 @@
     .label strong { font-size: 1.15rem; }
     .label .date { font-size: 0.85rem; font-weight: 600; color: var(--green-700); }
     .publication p { font-size: 0.97rem; color: var(--text-2); }
+    .pub-links { margin-top: 14px; padding-top: 12px; border-top-color: var(--blue-100); }
 
     .cert { display: flex; align-items: center; gap: 18px; padding: 14px 22px; color: var(--text); text-decoration: none; }
     .cert img { width: auto; height: 48px; }
@@ -1008,6 +1009,7 @@
             <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI &amp; Data</button>
             <button class="filter" type="button" data-filter="fullstack" aria-pressed="false">Full-Stack</button>
             <button class="filter" type="button" data-filter="iot" aria-pressed="false">IoT &amp; Hardware</button>
+            <button class="filter" type="button" data-filter="individual" aria-pressed="false">Individual</button>
           </div>
         </div>
 
@@ -1038,21 +1040,7 @@
             <button class="see-more" type="button" aria-expanded="false">See more <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
             <ul class="tags small"><li>Python</li><li>LangChain</li><li>Hybrid retrieval</li><li>Langfuse</li><li>DeepEval</li><li>RAGAS</li></ul>
           </article>
-          <article class="row project" data-cat="fullstack ai">
-            <div class="cover" style="--c1: #f97316; --c2: #e11d48">
-              <svg class="cover-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>
-              <span class="cover-label">Freelance - Individual</span>
-            </div>
-            <h3>CareFlow: Medical Clinic Booking &amp; Queue System</h3>
-            <div class="desc">
-              <p>Patients find a doctor, check live session availability and book online without creating an account. Staff run the whole clinic day from one role-based portal: registrations, doctor schedules, QR check-in, walk-ins and live queues. SMS reminders keep patients informed and an AI chat assistant handles common questions.</p>
-              <div class="more"><p><strong>Contribution:</strong> Everything, end to end: client requirements, system design, data modelling, the REST API and React frontend, the AI chatbot and SMS pipeline, automated tests, containers, AWS infrastructure as code, security hardening and the production launch.</p></div>
-            </div>
-            <button class="see-more" type="button" aria-expanded="false">See more <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
-            <ul class="tags small"><li>FastAPI</li><li>PostgreSQL</li><li>React</li><li>TypeScript</li><li>Docker</li><li>AWS CDK</li><li>Bedrock</li></ul>
-            <div class="card-links"><button class="card-link" type="button" data-gallery="careflow-gallery"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8L7 4Z"/></svg>Demo</button><a class="card-link" href="https://github.com/vidurukalpana/medical-clinic-management-web-app" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3Z"/></svg>Code</a><a class="card-link" href="https://vidurukalpana.github.io/medical-clinic-management-web-app/" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Project page</a></div>
-          </article>
-          <article class="row project" data-cat="ai">
+          <article class="row project" data-cat="ai individual">
             <div class="cover" style="--c1: #10b981; --c2: #0d9488">
               <svg class="cover-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 10v4M18 10v4"/></svg>
               <span class="cover-label">R&amp;D - Individual</span>
@@ -1067,7 +1055,7 @@
             <p class="card-note"><svg class="note-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></svg>35–42% lower cash-handling costs in backtests</p>
             <div class="card-links"><a class="card-link" href="https://github.com/vidurukalpana/atm-cash-optimizer" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3Z"/></svg>Code</a><a class="card-link" href="https://vidurukalpana.github.io/atm-cash-optimizer/" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Project page</a></div>
           </article>
-          <article class="row project" data-cat="fullstack">
+          <article class="row project" data-cat="fullstack individual">
             <div class="cover" style="--c1: #f43f5e; --c2: #f59e0b">
               <svg class="cover-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4V8Z"/><path d="M14 6v2M14 11v2M14 16v2"/></svg>
               <span class="cover-label">R&amp;D - Individual</span>
@@ -1080,6 +1068,48 @@
             <button class="see-more" type="button" aria-expanded="false">See more <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
             <ul class="tags small"><li>Go</li><li>Chi</li><li>TypeScript</li><li>React</li><li>Vite</li><li>TanStack Query</li><li>Tailwind CSS</li><li>PostgreSQL</li><li>sqlc</li><li>WebSockets</li><li>Docker</li></ul>
             <div class="card-links"><a class="card-link" href="https://github.com/vidurukalpana/QueueLess" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3Z"/></svg>Code</a><a class="card-link" href="https://vidurukalpana.github.io/QueueLess/" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Project page</a></div>
+          </article>
+          <article class="row project" data-cat="fullstack individual">
+            <div class="cover" style="--c1: #65a30d; --c2: #059669">
+              <svg class="cover-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8c-3-3-8-1.5-8 4 0 5 4 9 6 9 1 0 1.5-.5 2-.5s1 .5 2 .5c2 0 6-4 6-9 0-5.5-5-7-8-4Z"/><path d="M12 8c0-2 1-4 3-5"/></svg>
+              <span class="cover-label">R&amp;D - Individual</span>
+            </div>
+            <h3>Food Waste Reducer</h3>
+            <div class="desc">
+              <p>Helps households use food before it expires. Users log kitchen items with expiry dates, see what to use first on a colour-coded dashboard, get email reminders and review a monthly report of food used and wasted.</p>
+              <div class="more"><p><strong>Contribution:</strong> System design, Spring Boot REST APIs, JWT authentication, the React frontend, scheduled email reminders, automated testing and cloud deployment.</p></div>
+            </div>
+            <button class="see-more" type="button" aria-expanded="false">See more <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            <ul class="tags small"><li>Java</li><li>Spring Boot</li><li>Spring Security</li><li>PostgreSQL</li><li>TypeScript</li><li>React</li><li>Tailwind CSS</li><li>Docker</li><li>GitHub Actions</li></ul>
+            <div class="card-links"><a class="card-link" href="https://github.com/vidurukalpana/food-waste-reducer" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3Z"/></svg>Code</a><a class="card-link" href="https://vidurukalpana.github.io/food-waste-reducer/" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Project page</a></div>
+          </article>
+          <article class="row project" data-cat="fullstack ai individual">
+            <div class="cover" style="--c1: #f97316; --c2: #e11d48">
+              <svg class="cover-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>
+              <span class="cover-label">Freelance - Individual</span>
+            </div>
+            <h3>CareFlow: Medical Clinic Booking &amp; Queue System</h3>
+            <div class="desc">
+              <p>Patients find a doctor, check live session availability and book online without creating an account. Staff run the whole clinic day from one role-based portal: registrations, doctor schedules, QR check-in, walk-ins and live queues. SMS reminders keep patients informed and an AI chat assistant handles common questions.</p>
+              <div class="more"><p><strong>Contribution:</strong> Everything, end to end: client requirements, system design, data modelling, the REST API and React frontend, the AI chatbot and SMS pipeline, automated tests, containers, AWS infrastructure as code, security hardening and the production launch.</p></div>
+            </div>
+            <button class="see-more" type="button" aria-expanded="false">See more <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            <ul class="tags small"><li>FastAPI</li><li>PostgreSQL</li><li>React</li><li>TypeScript</li><li>Docker</li><li>AWS CDK</li><li>Bedrock</li></ul>
+            <div class="card-links"><button class="card-link" type="button" data-gallery="careflow-gallery"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8L7 4Z"/></svg>Demo</button><a class="card-link" href="https://github.com/vidurukalpana/medical-clinic-management-web-app" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3Z"/></svg>Code</a><a class="card-link" href="https://vidurukalpana.github.io/medical-clinic-management-web-app/" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Project page</a></div>
+          </article>
+          <article class="row project" data-cat="fullstack individual">
+            <div class="cover" style="--c1: #0d9488; --c2: #1d4ed8">
+              <svg class="cover-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 18V6M2 14h20v4M22 14v-2a3 3 0 0 0-3-3h-8v5"/><circle cx="6.5" cy="10.5" r="1.8"/></svg>
+              <span class="cover-label">Freelance - Individual</span>
+            </div>
+            <h3>Ward View: Hospital Ward Bed Board</h3>
+            <div class="desc">
+              <p>Replaces paper bed lists in a 40-bed hospital ward. Doctors see every bed on one secure, live-updating screen, colour-coded by the responsible doctor, and can admit, hand over and discharge patients.</p>
+              <div class="more"><p><strong>Contribution:</strong> Requirements gathering, data modelling, the Django app and UI, authentication, security hardening, testing and production deployment.</p></div>
+            </div>
+            <button class="see-more" type="button" aria-expanded="false">See more <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            <ul class="tags small"><li>Python</li><li>Django</li><li>PostgreSQL</li><li>django-axes</li><li>Gunicorn</li><li>Docker</li><li>Render</li></ul>
+            <div class="card-links"><a class="card-link" href="https://vidurukalpana.github.io/ward-view-web-page/" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Project page</a></div>
           </article>
           <article class="row project" data-cat="ai fullstack">
             <div class="cover" style="--c1: #7c3aed; --c2: #c026d3">
@@ -1094,7 +1124,7 @@
             <button class="see-more" type="button" aria-expanded="false">See more <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
             <ul class="tags small"><li>LLM APIs</li><li>Python</li><li>Flask</li><li>Angular</li><li>Docker</li></ul>
             <p class="card-note"><svg class="note-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></svg>IEEE ICEEET 2026 | First-author paper</p>
-            <div class="card-links"><button class="card-link" type="button" data-gallery="modumate-gallery"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8L7 4Z"/></svg>Demo</button><a class="card-link" href="https://github.com/vidurukalpana/ModuMate" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3Z"/></svg>Code</a><a class="card-link" href="https://vidurukalpana.github.io/ModuMate/" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Project page</a><a class="card-link" href="#publications"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6"/></svg>Paper</a></div>
+            <div class="card-links"><button class="card-link" type="button" data-gallery="modumate-gallery"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8L7 4Z"/></svg>Demo</button><a class="card-link" href="https://github.com/vidurukalpana/ModuMate" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3Z"/></svg>Code</a><a class="card-link" href="https://vidurukalpana.github.io/ModuMate/" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Project page</a><a class="card-link" href="docs/assets/ICEEET_2026_156.pdf" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6"/></svg>Paper</a></div>
           </article>
           <article class="row project" data-cat="iot fullstack">
             <div class="cover" style="--c1: #22c55e; --c2: #0f766e">
@@ -1125,6 +1155,20 @@
             <ul class="tags small"><li>React</li><li>Node.js</li><li>Express</li><li>Flutter</li><li>MySQL</li><li>AWS</li></ul>
             <div class="card-links"><a class="card-link" href="https://github.com/cepdnaclk/e17-3yp-smart-garbage-collection" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3Z"/></svg>Code</a><a class="card-link" href="https://cepdnaclk.github.io/e17-3yp-smart-garbage-collection/" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Project page</a></div>
           </article>
+          <article class="row project" data-cat="iot">
+            <div class="cover" style="--c1: #0284c7; --c2: #0f766e">
+              <svg class="cover-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V5l8-3 8 3v16"/><path d="M2 21h20M9 21v-4h6v4"/><path d="M8 8h2M14 8h2M8 12h2M14 12h2"/></svg>
+              <span class="cover-label">CO326 Project - Group</span>
+            </div>
+            <h3>Smart Building: HVAC Control System</h3>
+            <div class="desc">
+              <p>The HVAC subsystem of an Industry 4.0 smart building. Sensors publish room data over MQTT, a process controller drives the heating, cooling and ventilation, and operators monitor and override it from a SCADA dashboard.</p>
+              <div class="more"><p><strong>Contribution:</strong> Node-RED flows for room ventilation: sensing, control and SCADA views.</p></div>
+            </div>
+            <button class="see-more" type="button" aria-expanded="false">See more <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            <ul class="tags small"><li>MQTT</li><li>Node-RED</li><li>ESP8266</li><li>Python</li><li>SCADA</li></ul>
+            <div class="card-links"><a class="card-link" href="https://github.com/VidurangiKalpana/e17-co326-Smart-Building" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3Z"/></svg>Code</a><a class="card-link" href="https://cepdnaclk.github.io/e17-co326-Smart-Building/" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Project page</a></div>
+          </article>
           <article class="row project" data-cat="fullstack">
             <div class="cover" style="--c1: #0ea5e9; --c2: #6366f1">
               <svg class="cover-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
@@ -1138,7 +1182,7 @@
             <button class="see-more" type="button" aria-expanded="false">See more <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
             <ul class="tags small"><li>MySQL</li><li>HTML</li><li>CSS</li><li>PHP</li></ul>
           </article>
-          <article class="row project" data-cat="iot">
+          <article class="row project" data-cat="iot individual">
             <div class="cover" style="--c1: #475569; --c2: #4338ca">
               <svg class="cover-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>
               <span class="cover-label">Personal Project</span>
@@ -1151,7 +1195,7 @@
             <button class="see-more" type="button" aria-expanded="false">See more <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
             <ul class="tags small"><li>Verilog HDL</li></ul>
           </article>
-          <article class="row project" data-cat="fullstack">
+          <article class="row project" data-cat="fullstack individual">
             <div class="cover" style="--c1: #ec4899; --c2: #9333ea">
               <svg class="cover-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M22 20a7 7 0 0 0-4-6.3"/></svg>
               <span class="cover-label">Individual project</span>
@@ -1253,7 +1297,10 @@
             <strong>First author &amp; presenter</strong>
             <span class="date">Presented 18 October 2026 | Not yet published</span>
           </div>
-          <p><strong>M. W. V. Kalpana</strong>, V. Navanjana, T. Manohara, I. Nawinna, R. Ragel and D. Herath, “<cite>A Cost-Effective Intelligent Tutor using Language Models</cite>,” presented at the 2026 IEEE International Conference on Electrical Engineering and Emerging Technologies (ICEEET), Kandy, Sri Lanka, 18 Oct. 2026.</p>
+          <div>
+            <p><strong>M. W. V. Kalpana</strong>, V. Navanjana, T. Manohara, I. Nawinna, R. Ragel and D. Herath, “<cite>A Cost-Effective Intelligent Tutor using Language Models</cite>,” presented at the 2026 IEEE International Conference on Electrical Engineering and Emerging Technologies (ICEEET), Kandy, Sri Lanka, 18 Oct. 2026.</p>
+            <div class="card-links pub-links"><a class="card-link" href="docs/assets/ICEEET_2026_156.pdf" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6"/></svg>Read paper (PDF)</a></div>
+          </div>
         </div>
       </div>
     </section>
